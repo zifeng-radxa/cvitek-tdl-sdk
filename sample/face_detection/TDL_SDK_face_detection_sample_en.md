@@ -25,7 +25,7 @@
   export PATH=$PATH:$(pwd)/gcc/riscv64-linux-musl-x86_64/bin
   ```
 
-- Get the TDL_SDK repository
+- Clone the TDL_SDK repository
 
   ```bash
   git clone https://github.com/milkv-duo/cvitek-tdl-sdk
@@ -86,6 +86,6 @@ Enter the URL and click Play
 rtsp://192.168.42.1/h264
 ```
 
-![](/home/zifeng/git_clone/cvitek-tdl-sdk/sample/face_detection/1.png)
+![](https://github.com/zifeng-radxa/cvitek-tdl-sdk/blob/master/sample/face_detection/1.png?raw=true)
 
-![](/home/zifeng/git_clone/cvitek-tdl-sdk/sample/face_detection/2.png)
+![](https://github.com/zifeng-radxa/cvitek-tdl-sdk/blob/master/sample/face_detection/2.png?raw=true)

@@ -92,6 +92,6 @@ rtsp://192.168.42.1/h264
 
 
 
-![image-20240129182607583](/home/zifeng/.config/Typora/typora-user-images/image-20240129182607583.png)
+![image-20240129182607583](https://github.com/zifeng-radxa/cvitek-tdl-sdk/blob/master/sample/face_detection/1.png?raw=true)
 
-![image-20240129183019338](/home/zifeng/.config/Typora/typora-user-images/image-20240129183019338.png)
+![image-20240129183019338](https://github.com/zifeng-radxa/cvitek-tdl-sdk/blob/master/sample/face_detection/2.png?raw=true)
