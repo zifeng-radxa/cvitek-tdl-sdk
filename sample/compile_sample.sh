@@ -23,23 +23,24 @@ echo "SDK_VER: $SDK_VER"
 MAKE_OPTS=("KERNEL_ROOT=$KERNEL_ROOT" "MW_PATH=$MW_PATH" "TPU_PATH=$TPU_PATH"
            "IVE_PATH=$IVE_PATH" "USE_TPU_IVE=$USE_TPU_IVE"
            "CHIP=$CHIP_ARCH" "SDK_VER=$SDK_VER" "-j10")
+echo "${MAKE_OPTS[@]}"
 
-build_and_clean() {
-    pushd $1 || exit 1
-    make "${MAKE_OPTS[@]}" || exit 1
-    make clean || exit 1
-    echo "$1 done"
-    popd
-}
+# build_and_clean() {
+#     pushd $1 || exit 1
+#     make "${MAKE_OPTS[@]}" || exit 1
+#    # make clean || exit 1
+#     echo "$1 done"
+#     popd
+# }
 
-build_and_clean "${CURRENT_DIR}/cvi_tdl"
-build_and_clean "${CURRENT_DIR}/cvi_tdl_app"
-build_and_clean "${CURRENT_DIR}/cvi_md"
-build_and_clean "${CURRENT_DIR}/cvi_preprocess"
-build_and_clean "${CURRENT_DIR}/cvi_yolo"
+# build_and_clean "${CURRENT_DIR}/cvi_tdl"
+# build_and_clean "${CURRENT_DIR}/cvi_tdl_app"
+# build_and_clean "${CURRENT_DIR}/cvi_md"
+# build_and_clean "${CURRENT_DIR}/cvi_preprocess"
+# build_and_clean "${CURRENT_DIR}/cvi_yolo"
 
-if [ -d "${CURRENT_DIR}/cvi_draw_rect" ]; then
-    build_and_clean "${CURRENT_DIR}/cvi_draw_rect"
-fi
+# if [ -d "${CURRENT_DIR}/cvi_draw_rect" ]; then
+#     build_and_clean "${CURRENT_DIR}/cvi_draw_rect"
+# fi
 
-echo "finish build sample!!!"
+# echo "finish build sample!!!"
