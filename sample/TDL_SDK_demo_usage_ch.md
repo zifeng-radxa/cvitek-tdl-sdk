@@ -102,13 +102,13 @@ rtsp://192.168.42.1/h264
 - 打开sample/cvi_yolo目录
 
    ```bash
-cd cvitek-tdl-sdk/sample/cvi_yolo
+   cd cvitek-tdl-sdk/sample/cvi_yolo
    ```
 
 - 编译yolo系列程序得到sample_yolov5二进制文件
 
    ```bash
-   make KERNEL_ROOT=../../../cvitek-tdl-sdk/sample MW_PATH=../../../cvitek-tdl-sdk/sample/3rd/middleware/v2 TPU_PATH=../../../cvitek-tdl-sdk/sample/3rd/tpu IVE_PATH=../../../cvitek-tdl-sdk/sample/3rd/ive USE_TPU_IVE=ON CHIP=CV180X SDK_VER=musl_riscv64 -j10
+   make KERNEL_ROOT=../../../cvitek-tdl-sdk/sample MW_PATH=../../../cvitek-tdl-sdk/sample/3rd/middleware/v2 TPU_PATH=../../../cvitek-tdl-sdk/sample/3rd/tpu IVE_PATH=../../../cvitek-tdl-sdk/sample/3rd/ive USE_TPU_IVE=ON  CHIP=CV180X SDK_VER=musl_riscv64 -j10
    ```
    
 - *(Optional)删除生成的目标二进制文件*
@@ -260,5 +260,4 @@ detect res: 256.286438 367.324158 303.713562 450.689941 0.598015 43
 detect res: 282.405457 93.188477 309.046570 121.621582 0.555912 41
 detect res: 281.694244 60.846092 309.968231 91.153908 0.520292 41
 ```
-
 
